@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bill Split</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="text-center font-mono" style="background-color: #EDF67D;">
+    <h1 class="text-7xl font-bold mt-10" style="color: #724CF9;">Bill Split</h1>
+
+    <form class="m-8" id="party_form">
+        <label class="text-4xl" style="color: #564592" for="party_size">Size of Party:</label> <br>
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2" type="text" id="party_size" name="party_size" placeholder="Party Size"> <br>
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2 mt-2" type="submit" value="Submit">
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2 mt-2" type="reset" value="Reset">
+    </form>
+
+    <!-- Based on party size, create members for payment -->
+
+    <form class="m-8" id="member_form">
+        <label class="text-4xl" style="color: #564592" for="member_1">Member 1:</label> <br>
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2" type="text" id="member_1" name="member_1" placeholder="Member Name"> <br>
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2 mt-2" type="text" id="amount_due_1" name="amount_due_1" placeholder="Amount Due"> <br>
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2 mt-2" type="submit" value="Submit">
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2 mt-2" type="reset" value="Reset">
+    </form>
+
+    <form class="m-8" id="tax_form">
+        <label class="text-4xl" style="color: #564592" for="tax_amount">Tax Amount:</label><br>
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2" type="text" id="tax_amount" name="tax_amount" placeholder="Tax Amount"><br>
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2 mt-2" type="submit" value="Submit">
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2 mt-2" type="reset" value="Reset">
+    </form>
+
+    <h2 class="text-4xl" style="color: #564592">Tip</h2>
+    <form class="m-8" id="tip_form">
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2" type="button" value="15%">
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2" type="button" value="18%">
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2" type="button" value="20%">
+        <input class="bg-[#EDF67D] border-2 border-[#564592] text-[#564592] rounded-md p-2" type="button" value="Select Amount"> 
+    </form>
+</body>
+
+
+</html>
